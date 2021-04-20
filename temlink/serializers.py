@@ -9,7 +9,8 @@ class LinkSerializer(serializers.Serializer):
         'PUT',
         'DELETE',
         'OPTIONS',
-        'PATCH')
+        'PATCH',
+    )
 
     method = fields.ChoiceField(choices=METHOD_CHOICES, required=True)
     url = fields.URLField(required=True)
